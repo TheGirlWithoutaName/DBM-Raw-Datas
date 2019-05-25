@@ -5,6 +5,11 @@
   "_id": "VHJcy",
   "actions": [
     {
+      "comment": "Modified from PlutoMods#1112's multiban command.",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
       "info": "19",
       "storage": "1",
       "varName2": "botprefix",
