@@ -1,0 +1,74 @@
+{
+  "name": "anti-mass mention",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "RFlYN",
+  "actions": [
+    {
+      "condition": "3",
+      "comparison": "0",
+      "value": "4",
+      "iftrue": "3",
+      "iftrueVal": "3",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "3",
+      "comparison": "2",
+      "value": "4",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "1",
+      "comparison": "2",
+      "value": "4",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "4",
+      "iftrue": "0",
+      "iftrueVal": "1",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member}\n```ini\n[Please stop mass-mentioning people.]\n```",
+      "storage": "1",
+      "varName2": "del",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "30",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "3",
+      "varName": "del",
+      "name": "Delete Channel"
+    }
+  ],
+  "comType": "3"
+}
